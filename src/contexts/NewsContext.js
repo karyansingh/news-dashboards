@@ -34,8 +34,7 @@ export const NewsProvider = ({ children }) => {
       const mockArticles = generateMockArticles()
       setArticles(mockArticles)
 
-      // Uncomment below for real API usage:
-      /*
+      
       const response = await fetch(
         `${BASE_URL}/everything?q=${query}&pageSize=${pageSize}&apiKey=${API_KEY}`
       );
@@ -46,7 +45,7 @@ export const NewsProvider = ({ children }) => {
       
       const data = await response.json();
       setArticles(data.articles || []);
-      */
+      
     } catch (error) {
       console.error("Error fetching news:", error)
       toast.error("Failed to fetch news. Using mock data.")
