@@ -24,7 +24,7 @@ export const NewsProvider = ({ children }) => {
     source: "",
   })
 
-  const API_KEY = "your-news-api-key" // Replace with your News API key
+  const API_KEY = "1d640ac021554943a6e5f6920927a351" 
   const BASE_URL = "https://newsapi.org/v2"
 
   const fetchNews = async (query = "technology", pageSize = 50) => {
